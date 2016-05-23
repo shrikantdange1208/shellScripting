@@ -48,5 +48,6 @@ Sort Command
 
 Cut Command
 1. Cut command is used to select particular columns from a file.
+2. We have to specify the seperator between columns. Default seperator is "tab".
 
 	
