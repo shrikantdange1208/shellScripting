@@ -1,1 +1,52 @@
-# Scripting Notes
+# Scripting Notes:
+
+
+What is a Shell?
+--> Interface between user nad Unix kernel.
+
+Advantages of Schell Programming:
+--> Easy and convenient to build programs. 
+
+Commands:
+1. pwd -> present working directory
+2. cal -> Calendar
+3. date -->
+4. touch -> Create empty text files.
+5. cat --> Create text file with some contents.
+6. cp --> copy files 
+
+What are Links?
+1. Soft Kind: Pointer or reference that system uses to point to the address of the original file.
+	ln -s old old_soft
+	If we delete old file, old_soft file will not open.
+
+2. Hard Kind: Copy of a file or directory and will occupy the same space between root directory and root file.
+       ln old new 
+ 	If we delete old original file, then new file will remain intact.
+
+File Permissions:
+1. rwx-rwx-rwx --> owner-group-user
+2. read = 4, write = 2, execute = 1: Total 7
+3. Change file permissions using chmod command
+	chmod 777 will give all rwx permissions to owner, user and group.
+	chmod 124 will give execute, write and read permissions to owner,group and other respectively.
+
+ls Command
+1. ls
+2. ls -l shows permissions
+3. ls -al show hidden files also.
+
+wc command (Word Count)
+
+1. wc ScriptingCookbook.txt shows number of lines, words and number of characters.
+2. wc -l shows number of lines.
+3. wc -w shows number of words.
+4. wc -c shows caharacter count.
+
+Sort Command
+1. sort animals.txt will extract the lines from the file, sorts it and displays on the terminal.
+
+Cut Command
+1. Cut command is used to select particular columns from a file.
+
+	
