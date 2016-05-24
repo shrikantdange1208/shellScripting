@@ -52,4 +52,47 @@ Cut Command
 
 
 Shell Scripting:
-Shell Script: File which has few commands in it.	
+Shell Script: File which has few commands in it.
+
+Grab User input:
+1.To grab user input use "read" command.
+2.read myVar.
+
+Positional Parameters:
+1. Parameters to any script starts from 1,2, so on.
+2. To access positional parameters use $1, $2, so on.
+3. We can get the total number of positional paramters using $#
+
+Execute command in another command:
+1. To execute one command in another command use reverse quotes or Accent Graves (``).
+2. set `expr 10+2`.
+	
+EXPR:
+1. To perform arithmatic operations use "expr".
+2. expr $1 + $10, expr $1 - $2
+
+BC:
+1. BC is the tool used for real number maths.
+2.Use pipe (|) symbol to give output of eho to BC tool.
+3. c=`echo $a+$b | bc`
+
+Escape Sequences:
+1. Bunch of characters which always starts with back slash (\) followed by one or more characters.
+2. \n
+3. \r
+4. \t
+5. \b
+6. \033[1m --> to echo text in bold
+7. \033[7m --> background to black ann text in white.
+
+tput command:
+1. Clear the terminal.
+2. Detemine number of rows and columns on your terminal.
+3. Print characters in bold.
+4. Position cursor on any location on the terminal.
+
+Exit Status:
+1. '0' if statement executed succesfully.
+2. '1' if statement returned an error.
+3. To see the exit status of a statement use echo $?
+
